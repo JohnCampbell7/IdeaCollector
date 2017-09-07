@@ -13,6 +13,8 @@
 		21C382481F61E9660026D2F3 /* IdeaCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21C382461F61E9660026D2F3 /* IdeaCollector.xcdatamodeld */; };
 		21C3824A1F61E9660026D2F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21C382491F61E9660026D2F3 /* Assets.xcassets */; };
 		21C3824D1F61E9660026D2F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C3824B1F61E9660026D2F3 /* LaunchScreen.storyboard */; };
+		21C382551F61F2720026D2F3 /* peter-crouch-late-goal-vs-west-brom-clean-sheet-bonuses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21C382541F61F2720026D2F3 /* peter-crouch-late-goal-vs-west-brom-clean-sheet-bonuses.jpg */; };
+		21C382571F61F4100026D2F3 /* IdeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C382561F61F4100026D2F3 /* IdeaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		21C382491F61E9660026D2F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21C3824C1F61E9660026D2F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21C3824E1F61E9660026D2F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21C382541F61F2720026D2F3 /* peter-crouch-late-goal-vs-west-brom-clean-sheet-bonuses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "peter-crouch-late-goal-vs-west-brom-clean-sheet-bonuses.jpg"; sourceTree = "<group>"; };
+		21C382561F61F4100026D2F3 /* IdeaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdeaViewController.swift; path = ../../../../../Applications/IdeaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		21C3823E1F61E9660026D2F3 /* IdeaCollector */ = {
 			isa = PBXGroup;
 			children = (
+				21C382541F61F2720026D2F3 /* peter-crouch-late-goal-vs-west-brom-clean-sheet-bonuses.jpg */,
 				21C3823F1F61E9660026D2F3 /* AppDelegate.swift */,
 				21C382411F61E9660026D2F3 /* ViewController.swift */,
+				21C382561F61F4100026D2F3 /* IdeaViewController.swift */,
 				21C382431F61E9660026D2F3 /* Main.storyboard */,
 				21C382491F61E9660026D2F3 /* Assets.xcassets */,
 				21C3824B1F61E9660026D2F3 /* LaunchScreen.storyboard */,
@@ -129,6 +135,7 @@
 				21C3824D1F61E9660026D2F3 /* LaunchScreen.storyboard in Resources */,
 				21C3824A1F61E9660026D2F3 /* Assets.xcassets in Resources */,
 				21C382451F61E9660026D2F3 /* Main.storyboard in Resources */,
+				21C382551F61F2720026D2F3 /* peter-crouch-late-goal-vs-west-brom-clean-sheet-bonuses.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21C382421F61E9660026D2F3 /* ViewController.swift in Sources */,
+				21C382571F61F4100026D2F3 /* IdeaViewController.swift in Sources */,
 				21C382481F61E9660026D2F3 /* IdeaCollector.xcdatamodeld in Sources */,
 				21C382401F61E9660026D2F3 /* AppDelegate.swift in Sources */,
 			);
