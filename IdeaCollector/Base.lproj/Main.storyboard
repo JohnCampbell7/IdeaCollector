@@ -38,7 +38,7 @@
                     <navigationItem key="navigationItem" id="HLF-Wf-MK4">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="TPT-VT-Gvq">
                             <connections>
-                                <segue destination="cOd-Dv-PKV" kind="show" id="nSx-l0-jd6"/>
+                                <segue destination="cOd-Dv-PKV" kind="show" identifier="ideaSegue" id="nSx-l0-jd6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -82,15 +82,24 @@
                                     <action selector="addTapped:" destination="cOd-Dv-PKV" eventType="touchUpInside" id="qdc-dQ-oKh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdc-be-hSB">
+                                <rect key="frame" x="165" y="353" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="cOd-Dv-PKV" eventType="touchUpInside" id="3FJ-wy-l5y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fdc-be-hSB" firstAttribute="centerX" secondItem="Sjk-YY-4Rt" secondAttribute="centerX" id="Jrt-Yr-EeU"/>
                             <constraint firstItem="dnz-cH-Xa4" firstAttribute="centerX" secondItem="Sjk-YY-4Rt" secondAttribute="centerX" id="P9N-uA-iEM"/>
                             <constraint firstItem="hT5-nt-HkB" firstAttribute="top" secondItem="iVy-dz-vmA" secondAttribute="bottom" constant="22" id="QQ3-77-Z1l"/>
                             <constraint firstItem="iVy-dz-vmA" firstAttribute="centerX" secondItem="Sjk-YY-4Rt" secondAttribute="centerX" id="Tdt-JI-KqL"/>
                             <constraint firstItem="iVy-dz-vmA" firstAttribute="top" secondItem="GSI-aP-N6b" secondAttribute="bottom" constant="20" id="VCz-sS-kRC"/>
                             <constraint firstItem="iVy-dz-vmA" firstAttribute="centerX" secondItem="Sjk-YY-4Rt" secondAttribute="centerX" id="f2g-gC-rBd"/>
                             <constraint firstItem="hT5-nt-HkB" firstAttribute="centerX" secondItem="Sjk-YY-4Rt" secondAttribute="centerX" id="fNw-Q3-uB8"/>
+                            <constraint firstItem="fdc-be-hSB" firstAttribute="top" secondItem="dnz-cH-Xa4" secondAttribute="bottom" constant="17" id="iMM-Dw-Rnm"/>
                             <constraint firstItem="hT5-nt-HkB" firstAttribute="width" secondItem="iVy-dz-vmA" secondAttribute="width" id="wry-tn-7yv"/>
                             <constraint firstItem="dnz-cH-Xa4" firstAttribute="top" secondItem="hT5-nt-HkB" secondAttribute="bottom" constant="20" id="z0n-rX-Ql0"/>
                         </constraints>
@@ -114,6 +123,8 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="addupdatebutton" destination="dnz-cH-Xa4" id="Fox-u8-HA9"/>
+                        <outlet property="deleteButton" destination="fdc-be-hSB" id="Qi8-lY-yfx"/>
                         <outlet property="ideaImageView" destination="iVy-dz-vmA" id="d0X-La-Ic2"/>
                         <outlet property="titleTextField" destination="hT5-nt-HkB" id="6t1-gD-wee"/>
                     </connections>

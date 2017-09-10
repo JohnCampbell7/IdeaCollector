@@ -49,5 +49,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let idea = ideas[indexPath.row]
+        performSegue(withIdentifier: "ideaSegue", sender: idea)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! IdeaViewController
+        nextVC.idea = sender as? Idea
+    }
 }
 
